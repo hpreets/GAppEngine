@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Christian Science Journal Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+
+
+    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+    <script src="https://raw.github.com/scottjehl/Respond/master/respond.min.js"></script>
+        <script>
+                    $(document).ready(function(){
+                        $("#dtPractioners").addClass("enhanced");
+                        
+                        $( "thead th" ).each(function(i){
+                           var th = $(this),
+                              id = th.attr("id"), 
+                              classes = th.attr("class");  // essential, optional (or other content identifiers)
+                                 
+                           // assign an ID to each header, if none is in the markup
+                           /*if (!id) {
+                              id = ( "col-" ) + i;
+                              th.attr("id", id);
+                           };*/
+                                 
+                           // loop through each row to assign a "headers" attribute and any classes (essential, optional) to the matching cell
+                           // the "headers" attribute value = the header's ID
+                           $( "tbody tr" ).each(function(){
+                              var cell = $(this).find("th, td").eq(i);                        
+                              cell.attr("headers", id);
+                              if (classes) { cell.addClass(classes); };
+                           });
+    
+                        });
+                    });
+                    
+                    $(window).bind("orientationchange resize", function(){
+                       container.find("input").trigger("updateCheck");
+                    }); 
+        </script>
+
+    <style>
+      
+        table {
+            width: 100%
+        }
+        
+        .enhanced th ,
+        .enhanced td {
+           display: none;
+        }
+        
+        .enhanced th.essential, 
+        .enhanced td.essential,
+        .enhanced th.mobile, 
+            .enhanced td.mobile {
+           display: table-cell;
+        }
+        
+        @media screen and (min-width: 100px) {
+            .enhanced th.essential, 
+            .enhanced td.essential {
+                display: table-cell;
+            }
+            .enhanced th.mobile, 
+            .enhanced td.mobile,
+            .enhanced th.tablet, 
+            .enhanced td.tablet {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 300px) {
+            .enhanced th.tablet, 
+            .enhanced td.tablet {
+                display: none;
+            }
+            .enhanced th.mobile, 
+            .enhanced td.mobile {
+                display: table-cell;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .enhanced th.tablet, .enhanced td.tablet, .enhanced th, 
+            .enhanced td {
+                display: table-cell;
+            }
+            .enhanced th.mobile, 
+            .enhanced td.mobile {
+                display: none;
+            }
+        }
+
+    </style>
+
+
+
+
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="http://jsh.christianscience.com/extension/jsh/design/standard/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+        
+                  <div class="well sidebar-nav">
+              
+                                    <!--****************-->
+                        
+                            <div id="btndiv1" style="text-align:center;  clear:both; text-align:left; margin-top:5px;">
+                            <div id="btndiv2" style="text-align: center; padding:7px 0px 10px 0px">
+                                <center>
+                                <center><h2 style="margin:0px 0px 10px 0px; font-size:14px; color:#3266cc;">Search Options</h2></center>
+                                    <b>Find:</b><br>
+                                    <input type="text" name="thePage:frm:j_id6:j_id21" value="boston" onkeypress="handleKeyPress(event);" style="font-size:11px; color:#333; text-align:center; width:145px; padding-top:1px">
+                                    <br/><span style="font-size:10px">(<i>Last Name, City, etc...</i>)</span>
+                                    <script type="text/javascript"> function j_id23_onclick(){if(typeof jsfcljs == 'function'){jsfcljs(document.forms['thePage:frm'],'thePage:frm:j_id6:j_id23,thePage:frm:j_id6:j_id23','');}return false }</script>
+                                    <br/><img id="thePage:frm:j_id6:imgBtn" src="http://christianscience.force.com/resource/1288367466000/searchImgs/search-button-xxsm.jpg" onclick="j_id23_onclick();" style="cursor:pointer; margin:10px 0 5px 0">
+                                    <br>
+                                    <div>
+                                    <a href="./AdvancedDirectoryLookup" onmouseout="this.style.color='#7F4246'" onmouseover="this.style.color='#cd6b71'" style="color:#7F4246; text-decoration:underline">Reset form</a> 
+                                    </div>  
+                                </center>
+                            </div>
+                            </div>
+                    
+                            <!--*********************-->
+                        
+                            <div style=" clear:both; text-align:left; border-top:1px solid #777; border-bottom:1px dashed #777; background-color:#f1e1e1">
+                                <div style="text-align:center; padding:5px 0px 10px 0px">
+                                    <center>
+                                    <h2 style="margin:0px 0px 5px 0px; font-size:12px; color:#3266cc;">Search by Location <span style="font-size:11px;color: #333;font-weight:normal">(<a href="Javascript:zPopWindow('http://www.spirituality.com/journal/info-location.jhtml','info_location',320,300,2)"><b>?</b></a>)</span></h2>
+                                            <div>
+                                                <select name="thePage:frm:j_id6:j_id28" size="1" style="font-size:11px; color:#333; width:120px; height:20px;">	<option value="">Search Radius (US)</option>
+	<option value="5">5 miles (8 km)</option>
+	<option value="10">10 miles (16 km)</option>
+	<option value="20">20 miles (32 km)</option>
+	<option value="35">35 miles (56 km)</option>
+</select>
+                                            </div>
+                                    </center>
+                            
+                                </div>     
+                            </div>
+                        
+                            <!--*************************-->
+                        
+                        
+                        
+                        
+                        <!--**************************-->
+                            <div style=" clear:both; border-bottom:1px solid #777; text-align:left; background-color:#f1e1e1">
+                            <div style="text-align:center; padding:10px 0px 10px 0px">
+                                <center>
+                                    <div style="margin-bottom:5px;">
+                                        <input type="text" name="thePage:frm:j_id6:j_id31" value="none" onclick="this.value=''" onkeypress="handleKeyPress(event);" style="font-size:11px; color:#333; text-align:center; width:110px; padding-top:1px;">
+                                    </div>
+                                
+                                    <div style="margin-bottom:5px;">or from </div>
+                            
+                                <input type="text" name="thePage:frm:j_id6:j_id33" value="City/Town" onclick="this.value=''" onkeypress="handleKeyPress(event);" style="margin-bottom:10px; font-size:11px; color:#333; text-align:center; width:125px; padding-top:1px;">
+                                <br/><input type="text" name="thePage:frm:j_id6:j_id34" value="State/Region" onclick="this.value=''" onkeypress="handleKeyPress(event);" style="margin-bottom:10px; font-size:11px; color:#333; text-align:center; width:125px; padding-top:1px;">
+                                <br/><select name="thePage:frm:j_id6:j_id35" size="1" onkeypress="handleKeyPress(event);" style="font-size:11px; color:#333; width:125px; height:20px;">	<option value="" selected="selected">Select a Country</option>
+	<option value="United States">United States</option>
+	<option value="Afghanistan">Afghanistan</option>
+	<option value="Aland Islands">Aland Islands</option>
+	<option value="Albania">Albania</option>
+	<option value="Algeria">Algeria</option>
+	<option value="American Samoa">American Samoa</option>
+	<option value="Andorra">Andorra</option>
+	<option value="Angola">Angola</option>
+	<option value="Anguilla">Anguilla</option>
+	<option value="Antarctica">Antarctica</option>
+	<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+	<option value="Argentina">Argentina</option>
+	<option value="Armenia">Armenia</option>
+	<option value="Aruba">Aruba</option>
+	<option value="Australia">Australia</option>
+	<option value="Austria">Austria</option>
+	<option value="Azerbaijan">Azerbaijan</option>
+	<option value="Bahamas">Bahamas</option>
+	<option value="Bahrain">Bahrain</option>
+	<option value="Bangladesh">Bangladesh</option>
+	<option value="Barbados">Barbados</option>
+	<option value="Belarus">Belarus</option>
+	<option value="Belgium">Belgium</option>
+	<option value="Belize">Belize</option>
+	<option value="Benin">Benin</option>
+	<option value="Bermuda">Bermuda</option>
+	<option value="Bhutan">Bhutan</option>
+	<option value="Bolivia">Bolivia</option>
+	<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+	<option value="Botswana">Botswana</option>
+	<option value="Bouvet Island">Bouvet Island</option>
+	<option value="Brazil">Brazil</option>
+	<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+	<option value="British Virgin Islands">British Virgin Islands</option>
+	<option value="Brunei">Brunei</option>
+	<option value="Bulgaria">Bulgaria</option>
+	<option value="Burkina Faso">Burkina Faso</option>
+	<option value="Burundi">Burundi</option>
+	<option value="Cambodia">Cambodia</option>
+	<option value="Cameroon">Cameroon</option>
+	<option value="Canada">Canada</option>
+	<option value="Cape Verde">Cape Verde</option>
+	<option value="Cayman Islands">Cayman Islands</option>
+	<option value="Central African Republic">Central African Republic</option>
+	<option value="Chad">Chad</option>
+	<option value="Chile">Chile</option>
+	<option value="China">China</option>
+	<option value="Christmas Island">Christmas Island</option>
+	<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+	<option value="Colombia">Colombia</option>
+	<option value="Comoros">Comoros</option>
+	<option value="Cook Islands">Cook Islands</option>
+	<option value="Costa Rica">Costa Rica</option>
+	<option value="Cote D'Ivoire">Cote D'Ivoire</option>
+	<option value="Croatia">Croatia</option>
+	<option value="Cuba">Cuba</option>
+	<option value="Cyprus">Cyprus</option>
+	<option value="Czech Republic">Czech Republic</option>
+	<option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+	<option value="Denmark">Denmark</option>
+	<option value="Djibouti">Djibouti</option>
+	<option value="Dominica">Dominica</option>
+	<option value="Dominican Republic">Dominican Republic</option>
+	<option value="Ecuador">Ecuador</option>
+	<option value="Egypt">Egypt</option>
+	<option value="El Salvador">El Salvador</option>
+	<option value="Equatorial Guinea">Equatorial Guinea</option>
+	<option value="Eritrea">Eritrea</option>
+	<option value="Estonia">Estonia</option>
+	<option value="Ethiopia">Ethiopia</option>
+	<option value="Faeroe Islands">Faeroe Islands</option>
+	<option value="Falkland Islands">Falkland Islands</option>
+	<option value="Fiji">Fiji</option>
+	<option value="Finland">Finland</option>
+	<option value="France">France</option>
+	<option value="French Guiana">French Guiana</option>
+	<option value="French Polynesia">French Polynesia</option>
+	<option value="French Southern Territories">French Southern Territories</option>
+	<option value="Gabon">Gabon</option>
+	<option value="Gambia">Gambia</option>
+	<option value="Germany">Germany</option>
+	<option value="Ghana">Ghana</option>
+	<option value="Gibraltar">Gibraltar</option>
+	<option value="Greece">Greece</option>
+	<option value="Greenland">Greenland</option>
+	<option value="Grenada">Grenada</option>
+	<option value="Guadeloupe">Guadeloupe</option>
+	<option value="Guam">Guam</option>
+	<option value="Guatemala">Guatemala</option>
+	<option value="Guinea">Guinea</option>
+	<option value="Guinea-Bissau">Guinea-Bissau</option>
+	<option value="Guyana">Guyana</option>
+	<option value="Haiti">Haiti</option>
+	<option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+	<option value="Honduras">Honduras</option>
+	<option value="Hong Kong">Hong Kong</option>
+	<option value="Hungary">Hungary</option>
+	<option value="Iceland">Iceland</option>
+	<option value="India">India</option>
+	<option value="Indonesia">Indonesia</option>
+	<option value="Iran">Iran</option>
+	<option value="Iraq">Iraq</option>
+	<option value="Ireland">Ireland</option>
+	<option value="Isle of Man">Isle of Man</option>
+	<option value="Israel">Israel</option>
+	<option value="Italy">Italy</option>
+	<option value="Jamaica">Jamaica</option>
+	<option value="Japan">Japan</option>
+	<option value="Jordan">Jordan</option>
+	<option value="Kazakhstan">Kazakhstan</option>
+	<option value="Kenya">Kenya</option>
+	<option value="Kiribati">Kiribati</option>
+	<option value="Kuwait">Kuwait</option>
+	<option value="Kyrgyzstan">Kyrgyzstan</option>
+	<option value="Laos">Laos</option>
+	<option value="Latvia">Latvia</option>
+	<option value="Lebanon">Lebanon</option>
+	<option value="Lesotho">Lesotho</option>
+	<option value="Liberia">Liberia</option>
+	<option value="Libya">Libya</option>
+	<option value="Liechtenstein">Liechtenstein</option>
+	<option value="Lithuania">Lithuania</option>
+	<option value="Luxembourg">Luxembourg</option>
+	<option value="Macao">Macao</option>
+	<option value="Macedonia">Macedonia</option>
+	<option value="Madagascar">Madagascar</option>
+	<option value="Malawi">Malawi</option>
+	<option value="Malaysia">Malaysia</option>
+	<option value="Maldives">Maldives</option>
+	<option value="Mali">Mali</option>
+	<option value="Malta">Malta</option>
+	<option value="Marshall Islands">Marshall Islands</option>
+	<option value="Martinique">Martinique</option>
+	<option value="Mauritania">Mauritania</option>
+	<option value="Mauritius">Mauritius</option>
+	<option value="Mayotte">Mayotte</option>
+	<option value="Mexico">Mexico</option>
+	<option value="Micronesia">Micronesia</option>
+	<option value="Moldova">Moldova</option>
+	<option value="Monaco">Monaco</option>
+	<option value="Mongolia">Mongolia</option>
+	<option value="Montenegro">Montenegro</option>
+	<option value="Montserrat">Montserrat</option>
+	<option value="Morocco">Morocco</option>
+	<option value="Mozambique">Mozambique</option>
+	<option value="Myanmar">Myanmar</option>
+	<option value="Namibia">Namibia</option>
+	<option value="Nauru">Nauru</option>
+	<option value="Nepal">Nepal</option>
+	<option value="Netherlands Antilles">Netherlands Antilles</option>
+	<option value="New Caledonia">New Caledonia</option>
+	<option value="New Zealand">New Zealand</option>
+	<option value="Nicaragua">Nicaragua</option>
+	<option value="Niger">Niger</option>
+	<option value="Nigeria">Nigeria</option>
+	<option value="Niue">Niue</option>
+	<option value="Norfolk Island">Norfolk Island</option>
+	<option value="North Korea">North Korea</option>
+	<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+	<option value="Norway">Norway</option>
+	<option value="Oman">Oman</option>
+	<option value="Pakistan">Pakistan</option>
+	<option value="Palau">Palau</option>
+	<option value="Palestine Territory">Palestine Territory</option>
+	<option value="Panama">Panama</option>
+	<option value="Papua New Guinea">Papua New Guinea</option>
+	<option value="Paraguay">Paraguay</option>
+	<option value="Peru">Peru</option>
+	<option value="Philippines">Philippines</option>
+	<option value="Pitcairn Island">Pitcairn Island</option>
+	<option value="Poland">Poland</option>
+	<option value="Portugal">Portugal</option>
+	<option value="Puerto Rico">Puerto Rico</option>
+	<option value="Qatar">Qatar</option>
+	<option value="Republic of Congo">Republic of Congo</option>
+	<option value="Republic of Georgia">Republic of Georgia</option>
+	<option value="Reunion">Reunion</option>
+	<option value="Romania">Romania</option>
+	<option value="Russia">Russia</option>
+	<option value="Rwanda">Rwanda</option>
+	<option value="Saint Helena">Saint Helena</option>
+	<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+	<option value="Saint Lucia">Saint Lucia</option>
+	<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+	<option value="Saint Vincent and Grenadines">Saint Vincent and Grenadines</option>
+	<option value="Samoa">Samoa</option>
+	<option value="San Marino">San Marino</option>
+	<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+	<option value="Saudi Arabia">Saudi Arabia</option>
+	<option value="Senegal">Senegal</option>
+	<option value="Serbia">Serbia</option>
+	<option value="Seychelles">Seychelles</option>
+	<option value="Sierra Leone">Sierra Leone</option>
+	<option value="Singapore">Singapore</option>
+	<option value="Slovakia">Slovakia</option>
+	<option value="Slovenia">Slovenia</option>
+	<option value="Solomon Islands">Solomon Islands</option>
+	<option value="Somalia">Somalia</option>
+	<option value="South Africa">South Africa</option>
+	<option value="South Georgia and the South Sandwich Isl">South Georgia and the South Sandwich Isl</option>
+	<option value="South Korea">South Korea</option>
+	<option value="Spain">Spain</option>
+	<option value="Sri Lanka">Sri Lanka</option>
+	<option value="Sudan">Sudan</option>
+	<option value="Suriname">Suriname</option>
+	<option value="Svalbard &amp; Jan Mayen Islands">Svalbard &amp; Jan Mayen Islands</option>
+	<option value="Swaziland">Swaziland</option>
+	<option value="Sweden">Sweden</option>
+	<option value="Switzerland">Switzerland</option>
+	<option value="Syria">Syria</option>
+	<option value="Taiwan">Taiwan</option>
+	<option value="Tajikistan">Tajikistan</option>
+	<option value="Tanzania">Tanzania</option>
+	<option value="Thailand">Thailand</option>
+	<option value="The Netherlands">The Netherlands</option>
+	<option value="Timor-Leste">Timor-Leste</option>
+	<option value="Togo">Togo</option>
+	<option value="Tokelau">Tokelau</option>
+	<option value="Tonga">Tonga</option>
+	<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+	<option value="Tunisia">Tunisia</option>
+	<option value="Turkey">Turkey</option>
+	<option value="Turkmenistan">Turkmenistan</option>
+	<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+	<option value="Tuvalu">Tuvalu</option>
+	<option value="Uganda">Uganda</option>
+	<option value="Ukraine">Ukraine</option>
+	<option value="United Arab Emirates">United Arab Emirates</option>
+	<option value="United Kingdom">United Kingdom</option>
+	<option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+	<option value="Uruguay">Uruguay</option>
+	<option value="Uzbekistan">Uzbekistan</option>
+	<option value="Vanuatu">Vanuatu</option>
+	<option value="Vatican City">Vatican City</option>
+	<option value="Venezuela">Venezuela</option>
+	<option value="Viet Nam">Viet Nam</option>
+	<option value="Virgin Islands">Virgin Islands</option>
+	<option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+	<option value="Western Sahara">Western Sahara</option>
+	<option value="Yemen">Yemen</option>
+	<option value="Zambia">Zambia</option>
+	<option value="Zimbabwe">Zimbabwe</option>
+</select>
+                                </center>
+                            </div>
+                            </div>
+                            <!--************************-->                           
+                    
+                        <!--**********************-->
+                        
+                            <span id="thePage:frm:j_id6:adTypePanel">
+                                <div style=" clear:both; border-bottom:1px dashed #777; text-align:left; margin-bottom:5px;">
+                                <div style="padding:5px 0px 10px 0px">
+                                    <center><h2 style="margin:0px; font-size:12px; color:#3266cc;">Advertiser Type</h2></center>
+                                        <input type="checkbox" name="thePage:frm:j_id6:j_id39" checked="checked" onclick="Javascript:setSearchType('1');"> 
+                                        <b><span>
+All Types</span><br>
+                                        <input id="thePage:frm:j_id6:idPractitioners" type="checkbox" name="thePage:frm:j_id6:idPractitioners" checked="checked" onclick="Javascript:setSearchType2('2');" onkeypress="handleKeyPress(event);" disabled="disabled"> <b> 
+                                        <span style="font-size:11px;">
+Christian Science</span> </b> <br>
+                                                                                <div style="margin:0px 0px 0px 23px"><b>Practitioners</b></div>
+                                         
+                                            <div style="margin-top:5px; font-size:10px">
+                                                    <input id="thePage:frm:j_id6:p1" type="checkbox" name="thePage:frm:j_id6:p1" onkeypress="handleKeyPress(event);" style="width:13px; padding:0px; margin:0px 3px 0px 22px;"><span style="padding:0px; margin:0px;font-size:10px;">
+Only teachers (CSB) (</span><a href="Javascript:zPopWindow('http://www.spirituality.com/journal/info-practitioners.jhtml','info_practitioners',400,400,2)"><b>?</b></a>)<br>
+                                                    <input id="thePage:frm:j_id6:p2" type="checkbox" name="thePage:frm:j_id6:p2" onkeypress="handleKeyPress(event);" style="width:13px; padding:0px; margin:5px 3px 0px 22px;"><span style="font-size:10px;">
+Only those currently</span><br><span style="margin-left:41px;">
+teaching</span>&nbsp;(<a href="Javascript:zPopWindow('http://www.spirituality.com/journal/info-practitioners.jhtml','info_practitioners',400,400,2)"><b>?</b></a>)
+                                            </div>
+                                    <input type="checkbox" name="thePage:frm:j_id6:j_id54" checked="checked" onkeypress="handleKeyPress(event);" disabled="disabled"> <b> <span style="font-size:11px;">
+Churches/Societies</span> </b> <br>
+                                    <input type="checkbox" name="thePage:frm:j_id6:j_id58" checked="checked" onkeypress="handleKeyPress(event);" disabled="disabled"> <b> <span style="font-size:11px;">
+Reading Rooms</span> </b> <br>
+                                    <input type="checkbox" name="thePage:frm:j_id6:j_id62" checked="checked" onclick="Javascript:setSearchType2('3');" onkeypress="handleKeyPress(event);" disabled="disabled"> <b> <span style="font-size:11px;">
+Christian Science</span> </b> <br>
+                                                                                   <div style="margin:0px 0px 0px 23px"><b> Nurses </b> </div>
+                                        
+                                    <div style="margin-top:5px; font-size:10px">
+                                        <input id="thePage:frm:j_id6:n1" type="checkbox" name="thePage:frm:j_id6:n1" onkeypress="handleKeyPress(event);" style="width:13px;margin:0px 3px 0px 22px;"><span style="font-size:10px;">
+Only those able to</span><br> <span style="font-family: Arial, Helvetica, clean, sans-serif;margin-left:41px;">
+travel long-distance</span> (<a href="Javascript:zPopWindow('http://www.spirituality.com/journal/info-nurses.jhtml','info_nurses',360,200,2)"><b>?</b></a>)
+                                    </div>
+                                <input type="checkbox" name="thePage:frm:j_id6:j_id70" checked="checked" onkeypress="handleKeyPress(event);" disabled="disabled"> <b> <span style="font-size:11px;">
+College Organizations</span> </b> <br>
+                                <input type="checkbox" name="thePage:frm:j_id6:j_id74" checked="checked" onkeypress="handleKeyPress(event);" disabled="disabled"> <b> <span style="font-size:11px;">
+Committees on</span> </b> <br>
+                                                                               <div style="font-size:11px; margin:0px 0px 0px 23px"><b> Publication </b> </div> 
+                            
+                                </b></div><b>
+                                </b></div><b>
+                            </b></span><b>
+                          
+                          
+                                <!--*******************************-->
+                                        <!--***********************************************************************************************************-->
+                                        <!--*************************************************************-->
+                                            <!--**********-->
+                                            <!--**********************************************************************************-->
+                                            <!--************************************************************************************************************************************************************************************************-->
+                                            <!--**********-->
+                                                    <!--***********************************************************************************************************************-->
+                                                        <!--********************************************-->  
+                                                    <!--********************-->
+                                            <!--***********-->
+                                        <!--********-->
+                                        <!--********-->
+                                        
+                                        <div style=" clear:both; border-bottom:1px solid #777; text-align:left">
+                                        <div style="padding: 0px 0px 10px 0px">
+                                            <center>
+                                            
+                                            <h2 style="margin:0px; font-size:12px; color:#3266cc;">Contact Info </h2>
+                                                    <input type="checkbox" name="thePage:frm:j_id6:j_id79" onkeypress="handleKeyPress(event);"> Has email address (<a href="Javascript:zPopWindow('http://www.spirituality.com/journal/info-contact.jhtml','info_contact',310,150,2)"><b>?</b></a>)
+                                            </center>
+                                        </div> 
+                                        </div>
+                                        <br><br><br><br>
+                                <!--*****************************-->
+                                
+                            
+                                <!--*****************-->
+                                <!--****************************************************************************************************************-->
+                                <!--************************************************************-->
+                                    <!--**********-->
+                                        <!--********************************************************************************************************************-->
+                                        <!--********************************************-->  
+                                        <!--********************-->
+                                    <!--***********-->
+                                <!--********-->
+                                <!--********-->
+                                <!--***************-->
+                                
+                                <!--**********************************-->
+                                    <!--**************************************************************************************************************************-->
+                                        <!--********************************************************************-->
+                                    <!--***************-->
+                               <!--********-->
+                                <!--******************************************************-->
+                                
+                                       <!--**********************************************************************************************************************************************************************************************************************************************************-->
+                                     <!--********-->
+        
+
+        
+        </b>
+        
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="">
+          	<label style="font-size:18px; color:#3266cc;">Search Results</label>
+			<label>Results are organized by advertiser type below. The results can be sorted in ascending or descending order by clicking on any one of the column headings. Use the advanced search options in the left sidebar to refine the search further.</label>
+          </div>
+          <div class="row-fluid">
+            <div class="span6">
+<ul>
+                <li><b>Christian Science Practitioners &amp; Teachers:</b>
+                        <span onclick="Javascript:detailedView('6');" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="cursor:pointer" class="link">
+ <b>69 </b>  Results </span>
+                    </li>
+                
+            
+                    <li><b>Churches and Societies:</b> 
+                        <span onclick="Javascript:detailedView('1');" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="cursor: pointer; text-decoration: initial;" class="link">
+ <b>4 </b> Results </span>
+                    </li>
+                
+                    <li><b>Reading Rooms:</b> 
+                        <span onclick="Javascript:detailedView('2');" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="cursor:pointer" class="link">
+ <b>3 </b>  Results </span>
+                    </li>
+                
+                </ul>
+                
+            </div><!--/span-->
+            <div class="span6">
+<ul>
+                    <li><b>Christian Science Nurses:</b> 
+                        <span onclick="Javascript:detailedView('4');" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="cursor:pointer" class="link">
+ <b>3 </b>  Results </span>
+                    </li>
+                
+                <li><b>Organizations at Universities &amp; Colleges:</b>  
+                    <span onclick="Javascript:detailedView('3');" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="cursor:pointer" class="link">
+ <b>1 </b>  Results </span>
+                </li>
+                
+                    <li><b>Committees on Publication:</b>  
+                        <span onclick="Javascript:detailedView('5');" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="cursor:pointer" class="link">
+ <b>1 </b>  Results </span>
+                    </li>
+                </ul>
+            </div><!--/span-->
+          </div><!--/row-->
+          <div class="row-fluid">
+
+
+
+
+<div id="searchResultsPanel">
+
+<!--*******************--> 
+            <span id="thePage:frm:j_id6:srchResultsPractionersPanel">
+                
+            
+<table class="tableStyle" id="dtPractioners" border="1" cellpadding="0" cellspacing="0">
+<thead class="rich-table-thead">
+<tr class="">
+<th class=" colHeader essential" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id144header"><div id="thePage:frm:j_id6:dtPractioners:j_id144header:sortDiv"><label onclick="Javscript:sort('Practitioners' ,'Ad_Last_Name__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display: block; cursor: pointer; width: 100%; background-color: transparent; " title="Sort by Name">
+Name</label></div></th>
+<th class=" colHeader tablet" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id153header"><div id="thePage:frm:j_id6:dtPractioners:j_id153header:sortDiv"><label onclick="Javscript:sort('Practitioners' ,'PrimarySortCity__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by City">
+City</label></div></th>
+<th class=" colHeader tablet" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id157header"><div id="thePage:frm:j_id6:dtPractioners:j_id157header:sortDiv"><label onclick="Javscript:sort('Practitioners' ,'PrimarySortState__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by State/Region">
+State / Region</label></div></th>
+<th class=" colHeader tablet" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id161header"><div id="thePage:frm:j_id6:dtPractioners:j_id161header:sortDiv"><label onclick="Javscript:sort('Practitioners' ,'PrimarySortCountry__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by Country">
+Country</label></div></th>
+<th class=" colHeader tablet" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id165header"><div id="thePage:frm:j_id6:dtPractioners:j_id165header:sortDiv"><label onclick="Javscript:sort('Practitioners' ,'Primary_Phone__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by Phone Number">
+Phone</label></div></th>
+<th class=" colHeader tablet" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id169header"><div id="thePage:frm:j_id6:dtPractioners:j_id169header:sortDiv"><label onclick="Javscript:sort('Practitioners' ,'Primary_Email__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by Email Address">
+Email</label></div></th>
+<th class=" colHeader mobile" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id174header1"><div id="thePage:frm:j_id6:dtPractioners:j_id174header:sortDiv1"><label onclick="Javscript:sort('practitioners' ,'Account_Teaching__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by those currently teaching" class="cellteaching">
+City | State | Country</label></div></th>
+<th class=" colHeader mobile" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id174header2"><div id="thePage:frm:j_id6:dtPractioners:j_id174header:sortDiv2"><label onclick="Javscript:sort('practitioners' ,'Account_Teaching__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by those currently teaching" class="cellteaching">
+Phone | Email</label></div></th>
+<th class=" colHeader essential" scope="col" colspan="1" id="thePage:frm:j_id6:dtPractioners:j_id174header"><div id="thePage:frm:j_id6:dtPractioners:j_id174header:sortDiv"><label onclick="Javscript:sort('practitioners' ,'Account_Teaching__c');" onmouseout="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f1e1e1'" style="display:block; cursor:pointer; width:100%; * padding:5px 0 5px 0" title="Sort by those currently teaching" class="cellteaching">
+Teaching</label></div></th>
+</tr></thead>
+
+<tbody id="thePage:frm:j_id6:dtPractioners:tb">
+<tr class="odd">
+<th class="nameCol" id="thePage:frm:j_id6:dtPractioners:0:j_id144" colspan="1"><a href="./CSPTRecordDetail?Id=a1170000000XtoMAAS&amp;qckSearchText=boston&amp;qckSearchAdvertiserType=All&amp;onlyTeachers=false&amp;willTravel=false&amp;searchCity=City/Town&amp;searchState=State/Region&amp;searchCountry=&amp;qckSearchZipCode=none&amp;radiusDistance=&amp;searchType=Advanced" onmouseout="this.style.color='#7F4246'" onmouseover="this.style.color='#cd6b71'" style="text-decoration: underline; font-weight: bold; float: left; padding-left: 2px; color: rgb(127, 66, 70); " title="Andrews, Joan Wilson, CS" class="cellname1">Andrews, Joan Wilson, CS</a>
+</th>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:0:j_id153" colspan="1"><label title="Boston" class="cell cellcity">
+Boston</label></td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:0:j_id157" colspan="1"><label title="Massachusetts" class="cell cellstate">
+Massachuset...</label></td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:0:j_id161" colspan="1"><label title="United States" class="cell cellcountry">
+United States</label></td>
+<td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:0:j_id165" colspan="1"><label title="781-237-9458" class="cellphone">
+781-237-9458</label></td>
+<td class="colStyle colwidth3" id="thePage:frm:j_id6:dtPractioners:0:j_id169" colspan="1"><a href="mailto:" class="cellemail"></a>
+</td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:0:j_id1531" colspan="1"><label title="Boston" class="cell cellcity">
+Boston, MA, US</label></td>
+<td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:0:j_id1651" colspan="1"><label title="" class="cellphone">
+781-237-9458 <a href="mailto:" class="cellemail"></a></label></td>
+<td class="rColStyle colwidth4" id="thePage:frm:j_id6:dtPractioners:0:j_id174" colspan="1">
+                        <!--******************************************************************************************************************************************************************************************-->
+                        <center>&nbsp;</center>
+
+                    </td></tr>
+<tr class="even">
+<th class="nameCol" id="thePage:frm:j_id6:dtPractioners:1:j_id144" colspan="1"><a href="./CSPTRecordDetail?Id=a11700000007LTzAAM&amp;qckSearchText=boston&amp;qckSearchAdvertiserType=All&amp;onlyTeachers=false&amp;willTravel=false&amp;searchCity=City/Town&amp;searchState=State/Region&amp;searchCountry=&amp;qckSearchZipCode=none&amp;radiusDistance=&amp;searchType=Advanced" onmouseout="this.style.color='#7F4246'" onmouseover="this.style.color='#cd6b71'" style="text-decoration: underline; font-weight: bold; float:left; padding-left:2px; color:#7F4246;" title="Beckers, Linda Jo, CS" class="cellname1">Beckers, Linda Jo, CS</a>
+</th>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:1:j_id153" colspan="1"><label title="Venice" class="cell cellcity">
+Venice</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:1:j_id157" colspan="1"><label title="Florida" class="cell cellstate">
+Florida</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:1:j_id161" colspan="1"><label title="United States" class="cell cellcountry">
+United States</label></td><td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:1:j_id165" colspan="1"><label title="617-905-3884" class="cellphone">
+617-905-3884</label></td>
+<td class="colStyle colwidth3" id="thePage:frm:j_id6:dtPractioners:1:j_id169" colspan="1"><a href="mailto:lindajobeckers@hotmail.com" class="cellemail">lindajobecke...</a></td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:1:j_id1531" colspan="1"><label title="Venice" class="cell cellcity">
+Venice, FA, US</label></td>
+<td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:1:j_id1651" colspan="1"><label title="lindajobeckers@hotmail.com" class="cellphone">
+617-905-3884, <a href="mailto:lindajobeckers@hotmail.com" class="cellemail">lindajobecke...</a></label></td>
+<td class="rColStyle colwidth4" id="thePage:frm:j_id6:dtPractioners:1:j_id174" colspan="1">
+                        <!--******************************************************************************************************************************************************************************************-->
+                        <center>&nbsp;</center>
+
+                    </td></tr>
+<tr class="odd">
+<th class="nameCol" id="thePage:frm:j_id6:dtPractioners:2:j_id144" colspan="1"><a href="./CSPTRecordDetail?Id=a1170000000XtjVAAS&amp;qckSearchText=boston&amp;qckSearchAdvertiserType=All&amp;onlyTeachers=false&amp;willTravel=false&amp;searchCity=City/Town&amp;searchState=State/Region&amp;searchCountry=&amp;qckSearchZipCode=none&amp;radiusDistance=&amp;searchType=Advanced" onmouseout="this.style.color='#7F4246'" onmouseover="this.style.color='#cd6b71'" style="text-decoration: underline; font-weight: bold; float:left; padding-left:2px; color:#7F4246;" title="Blake-Weber, Tad, CS" class="cellname1">Blake-Weber, Tad, CS</a>
+</th>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:2:j_id153" colspan="1"><label title="Waltham" class="cell cellcity">
+Waltham</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:2:j_id157" colspan="1"><label title="Massachusetts" class="cell cellstate">
+Massachuset...</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:2:j_id161" colspan="1"><label title="United States" class="cell cellcountry">
+United States</label></td><td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:2:j_id165" colspan="1"><label title="617-642-4695" class="cellphone">
+617-642-4695</label></td><td class="colStyle colwidth3" id="thePage:frm:j_id6:dtPractioners:2:j_id169" colspan="1"><a href="mailto:tadblakeweber.cs@gmail.com" class="cellemail">tadblakewebe...</a></td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:2:j_id153" colspan="1"><label title="Waltham" class="cell cellcity">
+Waltham, MA, US</label></td>
+<td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:2:j_id165" colspan="1"><label title="tadblakeweber.cs@gmail.com" class="cellphone">
+617-642-4695, <a href="mailto:tadblakeweber.cs@gmail.com" class="cellemail">tadblakewebe...</a></label></td>
+<td class="rColStyle colwidth4" id="thePage:frm:j_id6:dtPractioners:2:j_id174" colspan="1">
+                        <!--******************************************************************************************************************************************************************************************-->
+                        <center>&nbsp;</center>
+
+                    </td></tr>
+<tr class="even">
+<th class="nameCol" id="thePage:frm:j_id6:dtPractioners:3:j_id144" colspan="1"><a href="./CSPTRecordDetail?Id=a11700000007rbjAAA&amp;qckSearchText=boston&amp;qckSearchAdvertiserType=All&amp;onlyTeachers=false&amp;willTravel=false&amp;searchCity=City/Town&amp;searchState=State/Region&amp;searchCountry=&amp;qckSearchZipCode=none&amp;radiusDistance=&amp;searchType=Advanced" onmouseout="this.style.color='#7F4246'" onmouseover="this.style.color='#cd6b71'" style="text-decoration: underline; font-weight: bold; float:left; padding-left:2px; color:#7F4246;" title="Bleichman, Norm, CS" class="cellname1">Bleichman, Norm, CS</a>
+</th><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:3:j_id153" colspan="1"><label title="Newburyport" class="cell cellcity">
+Newburyport</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:3:j_id157" colspan="1"><label title="Massachusetts" class="cell cellstate">
+Massachuset...</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:3:j_id161" colspan="1"><label title="United States" class="cell cellcountry">
+United States</label></td><td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:3:j_id165" colspan="1"><label title="617-799-9951" class="cellphone">
+617-799-9951</label></td><td class="colStyle colwidth3" id="thePage:frm:j_id6:dtPractioners:3:j_id169" colspan="1"><a href="mailto:bleichmancs@gmail.com" class="cellemail">bleichmancs@...</a></td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:3:j_id153" colspan="1"><label title="Newburyport" class="cell cellcity">
+Newburyport, MA, US</label></td>
+<td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:3:j_id165" colspan="1"><label title="bleichmancs@gmail.com" class="cellphone">
+617-799-9951, <a href="mailto:bleichmancs@gmail.com" class="cellemail">bleichmancs@...</a></label></td>
+<td class="rColStyle colwidth4" id="thePage:frm:j_id6:dtPractioners:3:j_id174" colspan="1">
+                        <!--******************************************************************************************************************************************************************************************-->
+                        <center>&nbsp;</center>
+
+                    </td></tr>
+<tr class="odd">
+<th class="nameCol" id="thePage:frm:j_id6:dtPractioners:4:j_id144" colspan="1"><a href="./CSPTRecordDetail?Id=a1170000000XtOvAAK&amp;qckSearchText=boston&amp;qckSearchAdvertiserType=All&amp;onlyTeachers=false&amp;willTravel=false&amp;searchCity=City/Town&amp;searchState=State/Region&amp;searchCountry=&amp;qckSearchZipCode=none&amp;radiusDistance=&amp;searchType=Advanced" onmouseout="this.style.color='#7F4246'" onmouseover="this.style.color='#cd6b71'" style="text-decoration: underline; font-weight: bold; float:left; padding-left:2px; color:#7F4246;" title="Collins, Susan Steinemann, CS" class="cellname1">Collins, Susan Steineman...</a>
+</th><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:4:j_id153" colspan="1"><label title="New York" class="cell cellcity">
+New York</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:4:j_id157" colspan="1"><label title="New York" class="cell cellstate">
+New York</label></td><td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:4:j_id161" colspan="1"><label title="United States" class="cell cellcountry">
+United States</label></td><td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:4:j_id165" colspan="1"><label title="212-580-0774" class="cellphone">
+212-580-0774</label></td><td class="colStyle colwidth3" id="thePage:frm:j_id6:dtPractioners:4:j_id169" colspan="1"><a href="mailto:susancollinscs@gmail.com" class="cellemail">susancollins...</a></td>
+<td class="colStyle colwidth1" id="thePage:frm:j_id6:dtPractioners:4:j_id153" colspan="1"><label title="New York" class="cell cellcity">
+New York, NY, US</label></td>
+<td class="colStyle colwidth2" id="thePage:frm:j_id6:dtPractioners:4:j_id165" colspan="1"><label title="susancollinscs@gmail.com" class="cellphone">
+212-580-0774, <a href="mailto:susancollinscs@gmail.com" class="cellemail">susancollins...</a></label></td>
+<td class="rColStyle colwidth4" id="thePage:frm:j_id6:dtPractioners:4:j_id174" colspan="1">
+                        <!--******************************************************************************************************************************************************************************************-->
+                        <center>&nbsp;</center>
+
+                    </td></tr>
+                    </tbody></table></span>
+<!--*****************-->      
+      
+        </div>
+
+
+
+
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
