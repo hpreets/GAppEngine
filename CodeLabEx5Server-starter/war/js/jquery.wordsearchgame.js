@@ -190,7 +190,7 @@
                         selectedword += u.value;
                 });
 
-                var wordIndex = this.model.wordList.isWordPresent(selectedword)
+                var wordIndex = this.model.wordList.isWordPresent(selectedword);
                 if (wordIndex!=-1) {
 					var sColor = this.model.wordList.get(wordIndex).selectColor(wordIndex);
                     $('.rf-glowing, .rf-highlight', this.element[0]).each(function() {
@@ -200,6 +200,13 @@
 
                     });
                     GameWidgetHelper.signalWordFound(wordIndex);
+                    var allFound = this.model.wordList.allWordsFound();
+                    if (allFound) {
+                		$(document).trigger({
+                			type    : "AllWordsFoundEvent",
+                			message : this.model
+                		});
+                    }
                 }
 
                 this.hotzone.returnToNormal();
@@ -388,10 +395,10 @@ function Hotzone() {
     }
 
     this.returnToNormal = function () {
-
-        for (var t=0;t<this.elems.length;t++) {
-            Visualizer.restore(this.elems[t]);
-        }
+    	if (this.elems != null)
+	        for (var t=0;t<this.elems.length;t++) {
+	            Visualizer.restore(this.elems[t]);
+	        }
     }
     
     this.clean = function() {
@@ -1171,6 +1178,7 @@ function Word(val, display) {
     this.col = -1;
     this.size = -1;
     this.chars = null;
+    this.withHelp = false;
 
     this.init = function () {
         this.chars = this.value.indexOf(";") > 0 ? this.value.split(";") : this.value.split("");
@@ -1242,6 +1250,13 @@ function WordList() {
         }
         return -1;
     }
+    
+    this.allWordsFound = function() {
+        for (var x=0;x<this.words.length;x++) {
+            if (!this.words[x].isFound) return false;
+        }
+        return true;
+    }
 }
 
 /*
@@ -1269,6 +1284,10 @@ var Util = {
 		// return String.fromCharCode(2581)+String.fromCharCode(2622);
 	},
 
+    replaceAll : function (str, oldStr, withStr) {
+        str.replace(oldStr, withStr);
+    },
+	
 } 
 
 

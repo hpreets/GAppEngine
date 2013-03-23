@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Punjabi Word Search Game</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.wordsearchgame.js"></script>
+        <script type="text/javascript" src="../../js/util.js"></script>
+       	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+        <link  rel="stylesheet" type="text/css" href="../../css/jquery.wordsearchgame.css">
+
+        <script type="text/javascript" src="../../js/data/wordsearch.js"></script>
+        <script>
+        var g;
+		$(document).ready( function () {
+			g = getUrlVars()["g"];
+	        var gd = '';
+	        try {
+	        	gd = eval("gridl"+g.split("-")[0] + "v" + g.split("-")[1]);
+	        }
+	        catch (e) {
+	        	window.location = 'index.html';
+	        	return false;
+	        }
+			var dispVal = gd.wordsToDisplay ? gd.wordsToDisplay : gd.words.replace(/;/g, "");
+
+			$("#theGrid").wordsearchwidget({"wordlist" : gd.words ,"gridsize" : gd.size, "wordsToDisplay" : dispVal});
+
+		});
+
+		$(document).bind("AllWordsFoundEvent", function() {
+			alert('Congratulations. Level complete. Good Job!! \n Move to next level.');
+			window.location ='khojlaho.html?g=' + g.split("-")[0] + '-' + (convertToInt(g.split("-")[1])+1);
+		});
+
+        </script>
+        
+    </head>
+    <body>
+		<h1>Punjabi Word Search (version - alpha)</h1> 
+        <div id="theGrid" />
+    </body>
+</html>
